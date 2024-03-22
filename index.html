@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SIT725</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/materialize.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h1 id="header" class="center-align">SIT725 - Applied Software Engineering</h1>
+            </div>
+            <div class="col s12 center-align">
+                <a class="waves-effect waves-light btn" onclick="changeText()">Change Text</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function changeText() {
+            let potentialTexts =['1','2','3','4','5'];
+            let randomNumber = getRandomNumber(0, potentialTexts.length - 1);
+            let textToChangeTo  = potentialTexts[randomNumber];
+            document.getElementById('header').innerHTML = textToChangeTo;
+        }
+        function getRandomNumber(min, max){
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+    </script>
+</body>
+</html>
