@@ -1,2 +1,2 @@
-# SIT725-2024-T1-prac1
+# sit725-2024-t1-prac2
 Jing Kang's Repository
